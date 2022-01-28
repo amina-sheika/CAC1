@@ -30,7 +30,7 @@
   </head>
   <body id = "body_id">
     <div class ="container">
-    <script type="text/javascript" src="validations.js"></script>
+    <!-- <script type="text/javascript" src="validations.js"></script> -->
     <div class="main-block">
       <div class="left-part">
         
@@ -40,18 +40,18 @@
           <i class="fas fa-pencil-alt"></i> 
           <h2>Student Feedback Form</h2>
         </div>
-        <center>
+        
         <div class="info">
           <form class="form" id="form">
             <div class="form-control">
-                <label>User name</label>
+                <label></label>
                 <input id="username" type="text" placeholder="username">
                 <i class="fa fa-check-circle"></i>
                 <i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
 
                 <div class="form-control">
-                    <label>Address</label>
+                    <label></label>
                     <!-- Phone replaced by  address -->
                     <input id="Address" type="text" placeholder="Address">
                     <i class="fa fa-check-circle"></i>
@@ -59,31 +59,14 @@
                     <small>Error message</small>
                 </div>
                 <div class="form-control">
-                    <label>Email</label>
+                    <label></label>
                     <input id="email" type="email" placeholder="email">
                     <i class="fa fa-check-circle"></i>
                     <i class="fa fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
             </div>
-            <!-- <div class="form-control">
-                <label>Address</label>
-                <!-- Phone replaced by  address -->
-                /
-            <!-- <div class="form-control">
-                <label>password</label>
-                <input id="password" type="password" placeholder="password">
-                <i class="fa fa-check-circle"></i>
-                <i class="fa fa-exclamation-circle"></i>
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label>password check</label>
-                <input id="password2" type="password" placeholder="password">
-                <i class="fa fa-check-circle"></i>
-                <i class="fa fa-exclamation-circle"></i>
-                <small>Error message</small>
-            </div> -->
+           
             <div class="form-control2">
                 <label><b>What did you liked most about campus ?</b></label><br></br>
                 <label class="main">Students
@@ -142,46 +125,7 @@
             </div>
         </form>
     </div>
-    </center>
-
-
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
+   
 </script>
   </body>
 </html>
